@@ -1,0 +1,344 @@
+html{ /*style som gælder hele hjemmesiden*/
+font-family: barricada-pro, serif;
+font-weight: 400;
+font-style: normal;
+letter-spacing: 2px;
+scroll-behavior: smooth;
+}
+
+.logo{ /*logo*/
+text-align: center; 
+}
+
+.isbjoern{ /*logo*/
+position: absolute;
+top: 1.2%;
+}
+
+
+
+.searchterm{ /*Searchbar*/
+    position: absolute;
+    top: 45px;
+    width: 10%;
+    right: 45px;
+    border: 3px solid #FF0000;
+    padding: 10px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+
+
+
+body{ /*Gælder hele body elementet*/
+background-image:url(images/joshua-bartell-6vvIBTvL90A-unsplas.jpg)
+}
+
+.logo_nav{
+background-color: white;
+}
+
+nav{
+background-color: rgba(0,0,105,0.8);
+
+}
+
+/*navbar til mobilen*/
+@media all and (max-width: 600px) {
+.nav_nav{
+list-style-type: none;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
+padding-right: 50px;
+margin-top: 0px;
+}
+    
+.isbjoern{
+display: none;
+}
+    
+#button1 a{
+display: none;
+}
+
+a{ 
+color: white;
+padding: 8px;
+width: 100%;
+text-align: center;
+order: 3;
+}
+
+
+a:hover {
+text-decoration: underline;
+}
+    
+}
+
+/*navbar til desktop*/
+
+@media all and (min-width: 700px) {
+    .nav_nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        list-style-type: none;
+        padding-right: 50px;
+        margin-top: 0px;
+        padding-left: 0px;
+    }
+    
+    a{
+        color: white;
+        padding: 25px;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: none;
+        color: red;
+    }
+    
+}
+
+.is{ /*Billedet på forsiden*/
+    width: 45%;
+    margin-top: 50px;
+}
+
+.is2{
+    text-align: center;
+}
+
+.knap1{ /*Første knap på forsiden*/
+    position: absolute;
+    display: inline-block;
+    padding: 20px 20px;
+    color: white;
+    background-color: rgba(0,0,105,0.8);
+    border-style: solid;
+    left: 30%;
+    top: 650px;
+}
+
+.knap2{ /*Anden knap på forsiden*/
+    position: absolute;
+    display: inline-block;
+    padding: 20px 20px;
+    color: white;
+    background-color: rgba(0,0,105,0.8);
+    border-style: solid;
+    top: 650px;
+    left: 57%;
+}
+
+@media all and (max-width: 600px){
+    #button1{
+    display: none;
+    visibility: hidden;
+    }
+    table{
+    left: 0%;
+    position: absolute;
+    }
+}
+@media all and (min-width: 601px){
+
+#button1{ /*Den runde knap der scroller ned til konkurrencen*/
+    background-color: rgba(0,0,105,0.8);
+    border: none;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin: 4px 2px;
+    border-radius: 100%;
+    font-family: barricada-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    border-style: ridge;
+    top: 615px;
+    left: 85%;
+    position: absolute;
+}
+}
+
+@media all and (max-width: 600px) {
+    .knap1{
+        padding: 10px 5px;
+        top: 70%;
+        left:0px;
+        
+    }
+    
+    .knap2{
+        padding: 10px 5px;
+        top: 77%;
+        left: 0px;
+    }
+    
+    .konkurrence{
+        width: 35%;
+        margin-left: 0px;
+    }
+}
+
+#overskrift1{ /*Overskrift til konkurrencen*/
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.konkurrence{ /*Tekst til konkurrencen*/
+    color: white;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    margin-left: 150px;
+    margin-right: 150px;
+    line-height: 25px;
+}
+/*Formen til konkurrencen*/
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.konkurrenceform {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/*Overskrift til underside*/
+.ingredienserh1{
+text-align: center;
+color: white;
+}
+
+.ingredienserp{ /*Tekst til underside*/
+position: absolute;
+left: 24%;
+color: white;
+width: 50%;
+align-content: center;
+line-height: 35px;
+border-style: solid;
+padding: 10px;
+background-color: rgba(0,0,0,0.6);
+
+}
+/*Tabel til næringsindhold*/
+table, th, td {
+border: 1px solid white;
+border-collapse: collapse;
+}
+
+th, td{
+color: white;
+padding: 10px;
+}
+
+table{
+position: absolute;
+left: 35%;
+background-color: rgba(0,0,0,0.6);
+}
+/*Footer*/
+.listefooter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footerli{
+    color: white;
+    line-height: 25px;
+}
+/*Sektionen til opskrifter*/
+.section{
+   position: absolute;
+    left: 25%;
+    width: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.opskrifter2{
+    color: white;
+}
+
+.split{
+    width: 100%;
+}
+
+.vaffel{
+    width: 100%;
+}
+/*Når man har tilmeldt sig konkurrencen*/
+.overskriftkonkurrence{
+    color: white;
+    text-align: center;
+}
+
+.pkonkurrence{
+    color: white;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    left: 25%;
+    line-height: 30px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+
+
+
+
+
